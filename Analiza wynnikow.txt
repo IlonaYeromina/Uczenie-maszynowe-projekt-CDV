@@ -1,0 +1,46 @@
+*Analiza macierzy korelacji (przykladowo):
+
+1. Współrzędne geograficzne (szerokość geograficzna, długość geograficzna):
+    - Cena vs Lokalizacja: Oferty w centrum miasta mogą być droższe niż na przedmieściach.
+    - Dostępność vs Lokalizacja: Oferty w popularnych lokalizacjach turystycznych mogą być dostępne przez krótszy czas ze względu na wysoki popyt.
+    - Liczba recenzji vs Lokalizacja: Oferty w popularnych lokalizacjach mogą mieć więcej recenzji ze względu na większą liczbę gości.
+
+2. Cena:
+    - Cena vs Typ pokoju: Całe mieszkania/mieszkania mogą być droższe niż pokoje prywatne lub współdzielone.
+    - Cena vs Lokalizacja: Oferty na Manhattanie mogą być droższe ze względu na ich popularność i bliskość do wielu atrakcji.
+    - Cena vs Minimalna liczba nocy: Gospodarze z wyższymi cenami mogą preferować dłuższe rezerwacje.
+
+3. Minimalna liczba nocy:
+    - Minimalna liczba nocy vs Cena: Gospodarze z wyższymi cenami mogą ustawić wyższą minimalną liczbę nocy.
+    - Minimalna liczba nocy vs Typ pokoju: Gospodarze oferujący całe mieszkania/mieszkania mogą preferować dłuższe rezerwacje.
+    - Minimalna liczba nocy vs Lokalizacja: W popularnych lokalizacjach turystycznych gospodarze mogą preferować dłuższe rezerwacje.
+
+4. Liczba recenzji:
+    - Liczba recenzji vs Cena: Oferty z większą liczbą recenzji mogą być droższe ze względu na większą popularność.
+    - Liczba recenzji vs Dostępność: Oferty z większą liczbą recenzji mogą być mniej dostępne ze względu na wysoki popyt.
+    - Liczba recenzji vs Lokalizacja: Oferty w popularnych lokalizacjach mogą mieć więcej recenzji.
+
+5. Obliczona liczba ofert gospodarza:
+    - Obliczona liczba ofert gospodarza vs Cena: Gospodarze z większą liczbą ofert mogą ustawić wyższe ceny.
+    - Obliczona liczba ofert gospodarza vs Dostępność: Gospodarze z większą liczbą ofert mogą mieć mniej dostępności ze względu na zarządzanie wieloma ofertami.
+    - Obliczona liczba ofert gospodarza vs Lokalizacja: Gospodarze z większą liczbą ofert mogą mieć oferty w różnych lokalizacjach.
+
+6. Dostępność przez 365 dni:
+    - Dostępność vs Cena: Oferty, które są dostępne przez większą część roku, mogą być droższe.
+    - Dostępność vs Lokalizacja: Oferty w mniej popularnych lokalizacjach mogą być dostępne przez większą część roku.
+    - Dostępność vs Typ pokoju: Pokoje prywatne i współdzielone mogą być dostępne przez większą część roku.
+
+7. Lokalizacje (Bronx, Brooklyn, Manhattan, Queens i Staten Island):
+    - Lokalizacja vs Cena: Oferty na Manhattanie mogą być droższe.
+    - Lokalizacja vs Typ pokoju: W niektórych lokalizacjach może być więcej ofert na całe mieszkania/mieszkania.
+    - Lokalizacja vs Dostępność: W niektórych lokalizacjach oferty mogą być dostępne przez krótszy czas.
+
+8. Typy pokoi (Całe mieszkanie/mieszkanie, Pokój prywatny i Pokój współdzielony):
+    - Typ pokoju vs Cena: Całe mieszkania/mieszkania mogą być droższe.
+    - Typ pokoju vs Lokalizacja: W niektórych lokalizacjach może być więcej ofert na całe mieszkania/mieszkania.
+    - Typ pokoju vs Dostępność: Pokoje prywatne i współdzielone mogą być dostępne przez większą część roku.
+
+
+*Analiza wykresu słupkowego .
+Na podstawie wykresu, wygląda na to, że zarówno model regresji liniowej (LR), jak i model lasu losowego mają swoje mocne i słabe strony. Model LR ma wyższy błąd średniokwadratowy (mse), ale niższy błąd bezwzględny (mae), podczas gdy model lasu losowego ma niższy mse, ale wyższy mae.
+Błąd średniokwadratowy (mse) karze duże błędy bardziej niż błąd bezwzględny (mae). Dlatego model LR może być lepszy, jeśli chcemy uniknąć dużych błędów, podczas gdy model lasu losowego może być lepszy, jeśli chcemy zminimalizować średni błąd.

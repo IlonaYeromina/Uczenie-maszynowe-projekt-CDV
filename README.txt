@@ -1,0 +1,1 @@
+W tym projekcie zbadaliśmy cenę wynajmu mieszkania w serwisie AirBnB przy użyciu biblioteki sklearn i zbioru danych znalezionego w serwisie kaggle.
